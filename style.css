@@ -1,0 +1,373 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body
+{
+    min-height: 130vh;
+}
+/* header section started */
+
+.info
+{
+    background-color: #ECECEC;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.info div
+{
+    font-size: 11px;
+    border-right: 1px solid #BFBFBF;
+    padding: 8px 6px 8px 10px;
+    font-weight: 400;
+}
+.info div p:nth-child(1)
+{
+    font-weight: 600;
+}
+.heading
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.heading div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heading div h1
+{
+    font-size: 23px;
+    font-weight: 700;
+    color: #002C56;
+}
+.heading div p
+{
+    font-size: 16px;
+    font-weight: 600;
+    color: #003E79;
+    margin-top: 5px;
+}
+.heading .logo
+{
+    height: 45px;
+    position: absolute;
+    left: 20px;
+}
+.heading .nta-logo
+{
+    height: 45px;
+    position: absolute;
+    right: 20px;
+}
+nav{
+    width: 100%;
+    background: #002C56;
+    padding-left: 10px;
+}
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+}
+nav ul li a
+{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    border-right: 1px solid white;
+    font-size: 15px;
+}
+.marquee
+{
+    background: #EAF5FF;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.marquee p
+{
+    border: 1px dashed #B1B2B3;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    background: white;
+}
+/* header end */
+/* main started */
+.main
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 0 10px 0 10px;
+}
+/* main end */
+/* left aside start */
+.main .left
+{
+    width: 22%;
+}
+/* current events started */
+.left .current-events
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+    
+}
+
+.left .current-events .content
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #002C56;
+    border-bottom: 1px solid #B1B2B3;
+}
+.left .current-events .content h2
+{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 5px;
+}
+.left .current-events .content .bi
+{
+    border-radius: 50%;
+    background: white;
+    padding: 5px 8px;
+    margin-right: 5px;
+    color: #002C56;
+}
+.left .current-events .events-link
+{
+    background: #464545;
+}
+
+.left .current-events .events-link ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+.left .current-events .events-link ul li
+{
+    width: 100%;
+}
+.left .current-events .events-link ul li a
+{
+    display: block;
+    color: #F0F0F0;
+    border-bottom: 1px solid #B1B2B3;
+    text-decoration: none;
+    padding: 10px 4px;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+}
+.left .current-events .events-link ul li a:hover
+{
+    background-color: #5B5851;
+}
+
+/* current events end */
+/* Important Links started */
+.left .important-links
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .5);
+    margin-top: 40px;
+    border-bottom: 5px solid #989898;
+}
+
+.left .important-links .content
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F3F3F3;
+    border-bottom: 1px solid #B1B2B3;
+}
+.left .important-links .content h2
+{
+    color: #2D2D2D;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 8px;
+}
+.left .important-links .content .bi
+{
+    border-radius: 50%;
+    background: #3C3C3C;
+    padding: 5px 8px;
+    margin-right: 5px;
+    color: white;
+}
+.left .important-links .important
+{
+    background: white;
+}
+.left .important-links .important ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+.left .important-links .important ul li
+{
+    width: 100%;
+}
+.left .important-links .important ul li a
+{
+    display: inline-block;
+    color: #2D2D2D;
+    text-decoration: none;
+    padding: 10px 8px;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 1px solid #ECECEC;
+    width: 100%;
+}
+/* Important Links end */
+
+/* left end */
+
+/* right start */
+.right
+{
+    width: 22%;
+    height: auto;
+}
+.right .news
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .5);
+    border: 1px solid #2F3335;
+    border-bottom: 5px solid #2F3335;
+    
+}
+
+.right .news .content
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2F2D2D;
+    border-bottom: 1px solid #B1B2B3;
+}
+.right .news .content h2
+{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 5px;
+}
+.right .news .content .bi
+{
+    border-radius: 50%;
+    background: white;
+    padding: 5px 8px;
+    margin-right: 5px;
+    color: #2F2D2D;
+}
+.right .news .news-link
+{
+    background: #FBFBFB;
+}
+.right .news .news-link ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+.right .news .news-link ul li
+{
+    width: 100%;
+}
+.right .news .news-link ul li a
+{
+    display: inline-block;
+    color: #2E2E2E;
+    border-bottom: 1px solid #B1B2B3;
+    text-decoration: none;
+    padding: 10px 4px;
+    font-size: 13px;
+    font-weight: 600;
+    width: 100%;
+}
+.right .news .news-link ul li a:hover
+{
+    color: white;
+    background-color: #3C3738;
+}
+/* right aside end */
+/* center started */
+.center
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.center .para1
+{
+    font-size: 25px;
+    font-weight: 500;
+    color: #515457;
+}
+.center .para2
+{
+    font-size: 15px;
+    line-height: 22px;
+    margin: 8px 0;
+    color: #424549;
+}
+.center .imp-links
+{
+    margin-top: 30px;
+}
+.center .imp-links ul
+{
+    list-style-type: none;
+}
+.center .imp-links ul li
+{
+    width: 100%;
+    margin: 5px;
+}
+.center .imp-links ul li a 
+{
+    display: inline-block;
+    width: 100%;
+    background-color: #00468A;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+/* center end */
+
